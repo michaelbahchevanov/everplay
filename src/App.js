@@ -1,16 +1,19 @@
 import React from 'react';
 
-import Navigation from './Components/Navigation/Navigation';
-import Main from './Components/Main/Main';
-import Moodbar from './Components/Moodbar/Moodbar';
+import { Main, Moodbar } from './components';
 
 class App extends React.Component {
   render (){
-    return <div>
-      <Navigation />
-      <Main />
-      <Moodbar />
-    </div>
+    return(
+      <React.Fragment>
+        <main className="flex flex-wrap items-center bg-gray-900">
+          <Main />
+        </main>
+        <div className="flex mb-2">
+          <Moodbar />
+        </div>
+      </React.Fragment>
+    );
   }
 }
 
