@@ -5,14 +5,14 @@ import { Main, Moodbar } from './components';
 class App extends React.Component {
   render (){
     return(
-      <React.Fragment>
-        <main className="flex flex-wrap items-center bg-gray-900">
+      <>
+        <main className="flex flex-wrap items-center mt-2 bg-gray-500">
           <Main />
         </main>
-        <div className="flex mb-2">
+        <div className="flex space-x-10 bg-black">
           <Moodbar />
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }

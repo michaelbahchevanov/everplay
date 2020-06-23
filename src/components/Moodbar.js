@@ -1,8 +1,17 @@
 import React from 'react';
+import { Mood } from './';
 
 class Moodbar extends React.Component {
   render() {
-    return <h1>This is the moodbar component</h1>
+    return (
+      <>
+        <Mood />
+        <Mood />
+        <Mood />
+        <Mood />
+        <Mood />
+      </>
+    );
   }
 }
 
